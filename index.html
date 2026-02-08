@@ -2,32 +2,196 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Haochuan Hu</title>
+  <title>Haochuan Hu | 胡灏川</title>
+
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
-    h1 { color: #2c3e50; }
-    nav a { margin: 0 10px; text-decoration: none; color: #2980b9; }
-    nav a:hover { text-decoration: underline; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, "Helvetica Neue", Arial, "PingFang SC",
+                   "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      line-height: 1.7;
+      color: #2c3e50;
+      background-color: #fafafa;
+    }
+
+    header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.4em;
+    }
+
+    .cn-name {
+      font-size: 0.6em;
+      color: #555;
+      margin-left: 10px;
+      font-weight: normal;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: #666;
+      font-size: 1.05em;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-top: 50px;
+    }
+
+    h2 {
+      border-left: 4px solid #2980b9;
+      padding-left: 10px;
+      font-size: 1.6em;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* ===== 教育经历样式 ===== */
+    .edu-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .edu-logo {
+      width: 50px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .edu-text {
+      line-height: 1.4;
+    }
+
+    .edu-school {
+      font-weight: 600;
+      font-size: 1.05em;
+    }
+
+    .edu-time {
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e5e5;
+      color: #777;
+      font-size: 0.9em;
+      text-align: center;
+    }
   </style>
 </head>
+
 <body>
-  <h1>Welcome to Haochuan Hu’s Homepage</h1>
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#research">Research</a>
-    <a href="#contact">Contact</a>
-  </nav>
+
+  <header>
+    <h1>
+      Haochuan Hu
+      <span class="cn-name">胡灏川</span>
+    </h1>
+    <div class="subtitle">
+      PhD Student · Electrical and Computer Engineering · Purdue University
+    </div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="https://scholar.google.com/citations?user=-AaOal0AAAAJ&hl=en">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <section id="about">
     <h2>About Me</h2>
-    <p>PhD Student in Electrical and Computer Engineering at Purdue University.</p>
+    <p>
+      A PhD student in the Electrical and Computer Engineering (ECE) department at
+      <strong>Purdue University</strong>.
+    </p>
   </section>
+
+  <section id="education">
+  <h2>Education</h2>
+
+  <div class="edu-item">
+    <img src="images/purdue.png" alt="Purdue University Logo" class="edu-logo">
+    <div class="edu-text">
+      <div class="edu-school">
+        Purdue University — <strong>Ph.D.</strong>, Electrical and Computer Engineering
+      </div>
+      <div class="edu-time">2024 – Present</div>
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <img src="images/bu.png" alt="Boston University Logo" class="edu-logo">
+    <div class="edu-text">
+      <div class="edu-school">
+        Boston University — <strong>M.S.</strong>, Electrical and Computer Engineering
+      </div>
+      <div class="edu-time">2022 – 2024</div>
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <img src="images/wzu.png" alt="Wenzhou University Logo" class="edu-logo">
+    <div class="edu-text">
+      <div class="edu-school">
+        Wenzhou University — <strong>B.S.</strong>, Electronic Information Engineering
+      </div>
+      <div class="edu-time">2017 – 2021</div>
+    </div>
+  </div>
+
+</section>
+
+
   <section id="research">
-    <h2>Research</h2>
-    <p>Focus on computer vision, image & video processing, image quality estimation.</p>
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Computer Vision</li>
+      <li>Image & Video Processing</li>
+      <li>Image / Video Quality Assessment</li>
+    </ul>
   </section>
+
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: hu1026@purdue.edu</p>
+    <p>
+      📧 Email:
+      <a href="mailto:hu1026@purdue.edu">hu1026@purdue.edu</a>
+    </p>
   </section>
+
+  <footer>
+    © 2026 Haochuan Hu (胡灏川)
+  </footer>
+
 </body>
 </html>
